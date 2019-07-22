@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/tvtest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#123"/>
+    <EditText
+        android:id="@+id/edtusername"
+        android:layout_below="@id/tvtest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="USERNAME"/>
+    <Button
+        android:id="@+id/btnsend"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/edtusername"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="LOGIN"/>
+    <Button
+        android:id="@+id/btnchat"
+        android:layout_below="@id/btnsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHAT"/>
+    <Button
+        android:id="@+id/btndisconnect"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/btnchat"
+        android:text="Disconnect"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:id="@+id/listuser"
+        android:layout_width="match_parent"
+        android:layout_below="@id/btndisconnect"
+        android:layout_height="wrap_content"
+        android:background="#114061">
+
+    </ListView>
+</RelativeLayout>
